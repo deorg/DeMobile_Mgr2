@@ -1,0 +1,91 @@
+/* .app-title {
+    margin-bottom: 10px;
+    padding: 10px 10px;
+} */
+#targetAmt {
+    background-color: #FF9EB3;
+    border-color: #FF4D73;
+    color:black;
+}
+#saleAmt {
+    background-color: #82CDFF;
+    border-color: #24A7FF;
+    color:black;
+}
+#diffAmt {
+    background-color: #FFE099;
+    border-color: #FFD574;
+    color:black;
+}
+#pdo {
+    background-color: #73E8E8;
+    border-color:#5BFBFB;
+    color:black;
+}
+label.btn.btn-primary.active {
+    filter: brightness(0.9);
+}
+.col-centered {
+    display:inline-block;
+    float:none;
+    /* reset the text-align */
+    text-align:left;
+    /* inline-block space fix */
+    margin-right:-4px;
+    text-align: center;
+}
+.btn {
+    padding: 0.20rem 0.60rem;
+}
+/* .app-content {
+    padding:10px;
+} */
+.tile {
+    margin-bottom: 15px;
+    padding:5px 15px;
+}
+.tile .tile-title {
+    margin-top:-4%;
+}
+.bs-component {
+    display: grid;
+    margin-bottom:0px;
+}
+label {
+    margin-bottom: 0.1rem;
+}
+.btn {
+    font-size: 0.70rem;
+}
+.form-control {
+    font-size: 0.90rem;
+    padding: 0.3rem 0.1rem;
+    text-align: center;
+    width:6rem;
+}
+.input-group {
+    width:15rem;
+}
+.input-group-text {
+    cursor: pointer;
+}
+.form-group {
+    margin-bottom: 0px;
+}
+#submitDate {
+    height: 100%;
+}
+
+#filter {
+    opacity: 0;
+    position: sticky;
+    z-index: 1;
+    -webkit-transition: opacity 0.3s ease-in-out;
+    -moz-transition: opacity 0.3s ease-in-out;
+    -ms-transition: opacity 0.3s ease-in-out;
+    -o-transition: opacity 0.3s ease-in-out;
+    transition: opacity 0.3s ease-in-out;
+}
+#filter:hover, #filter.hovered {
+    opacity: 0.95;
+}

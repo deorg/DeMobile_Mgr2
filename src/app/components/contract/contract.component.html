@@ -1,0 +1,43 @@
+<main class="app-content">
+  <div class="app-title">
+    <div>
+      <h1><i class="fa fa-file-text" aria-hidden="true"></i> {{cust_name}}</h1>
+    </div>
+    <div>
+      <i class="fa fa-bell" aria-hidden="true"></i>
+    </div>
+    <!-- <img width="35" height="35" src="../../../assets/images/logo/logo.png"
+          alt="User Image"> -->
+  </div>
+  <div class="row">
+    <div class="col-md-12 col-sm-12 col-xs-12" style="margin-top: 7.5rem;">
+      <div class="tile" *ngFor="let data of contract" (click)="viewPayment(data.CON_NO, data.CON_DATE, data.TOT_AMT, data.PERIOD, data.PAY_AMT, data.DISC_AMT, data.BAL_AMT)">
+        <div class="row">
+          <div class="col-10 col-sm-11 col-md-11 col-lg-11">
+            <p style="padding-left:10px;"><i class="fa fa-file-text" aria-hidden="true" style="color:#A2A523;"></i>
+              {{data.CON_NO}}</p>
+          </div>
+          <div class="col-2 col-sm-1 col-md-1 col-lg-1" style='text-align: center;'>
+            <i class="fa fa-chevron-right" aria-hidden="true"></i>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-10">
+            <p style="padding-left:10px;margin-bottom: 0px;"><span style="color:#A2A523;">฿</span>&nbsp;
+              {{data.TOT_AMT}}</p>
+          </div>
+          <div class="col-2">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-10">
+            <p style="padding-left:10px;"><i class="fa fa-clock-o" aria-hidden="true" style="color:#A2A523;"></i>
+              {{data.CON_DATE}}</p>
+          </div>
+          <div class="col-2">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
